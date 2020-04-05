@@ -1,1 +1,9 @@
-{}
+{
+  "appId": "com.queroajudar.app",
+  "appName": "QueroAjudar",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "build",
+  "cordova": {},
+  "linuxAndroidStudioPath": "/home/bruncky/android-studio/bin/studio.sh"
+}
