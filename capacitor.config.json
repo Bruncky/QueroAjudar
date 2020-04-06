@@ -1,6 +1,6 @@
 {
   "appId": "com.queroajudar.app",
-  "appName": "QueroAjudar",
+  "appName": "Quero Ajudar",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "build",
