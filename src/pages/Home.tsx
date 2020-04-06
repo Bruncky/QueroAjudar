@@ -4,8 +4,9 @@ import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
 import { Plugins } from '@capacitor/core';
 
+const { Browser } = Plugins;
+
 const Home: React.FC = () => {
-    const { Browser } = Plugins;
     Browser.open({ url: 'https://app.queroajudar.org/', windowName: "_self" });
 
     return (
