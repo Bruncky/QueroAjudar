@@ -2,17 +2,13 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import React from 'react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
-import { Plugins } from '@capacitor/core';
-import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
-
-const { Browser } = Plugins;
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 const Home: React.FC = () => {
-
     return (
         <IonPage>
             <IonContent>
-                { Browser.open({ url: 'https://app.queroajudar.org/', windowName: "_self" }) }
+                { InAppBrowser.create('https://app.queroajudar.org/', '_self') }
             </IonContent>
         </IonPage>
     );
