@@ -3,12 +3,17 @@ import React from 'react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { Plugins, StatusBarStyle } from '@capacitor/core';
+
+const { Browser } = Plugins;
+const { StatusBar } = Plugins;
 
 const Home: React.FC = () => {
     return (
         <IonPage>
             <IonContent>
-                { InAppBrowser.create('https://app.queroajudar.org/', '_self') }
+                { StatusBar.hide() }
+                { Browser.open({url: 'https://app.queroajudar.org/', windowName: '_self', presentationStyle: 'fullscreen'}) }
             </IonContent>
         </IonPage>
     );
