@@ -2,15 +2,19 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import React from 'react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
-import { Plugins } from '@capacitor/core';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { Plugins, StatusBarStyle } from '@capacitor/core';
 
 const { Browser } = Plugins;
+const { StatusBar } = Plugins;
 
 const Home: React.FC = () => {
-    Browser.open({ url: 'https://app.queroajudar.org/', windowName: "_self" });
-
     return (
         <IonPage>
+            <IonContent>
+                { StatusBar.hide() }
+                { Browser.open({url: 'https://app.queroajudar.org/', windowName: '_self', presentationStyle: 'fullscreen'}) }
+            </IonContent>
         </IonPage>
     );
 };
