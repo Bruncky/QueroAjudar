@@ -5,5 +5,10 @@
   "npmClient": "npm",
   "webDir": "build",
   "cordova": {},
-  "linuxAndroidStudioPath": "/home/bruncky/android-studio/bin/studio.sh"
+  "linuxAndroidStudioPath": "/home/bruncky/android-studio/bin/studio.sh",
+  "server": {
+      "allowNavigation": [
+          "https://app.queroajudar.org/"
+      ]
+  }
 }
