@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">QueroAjudar</string>
-    <string name="title_activity_main">QueroAjudar</string>
+    <string name="app_name">Quero Ajudar</string>
+    <string name="title_activity_main">Quero Ajudar</string>
     <string name="package_name">com.queroajudar.app</string>
     <string name="custom_url_scheme">com.queroajudar.app</string>
 </resources>
