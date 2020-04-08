@@ -1,6 +1,6 @@
 {
-  "short_name": "Ionic App",
-  "name": "My Ionic App",
+  "short_name": "Quero Ajudar",
+  "name": "Quero Ajudar",
   "icons": [
     {
       "src": "assets/icon/favicon.png",
@@ -14,7 +14,7 @@
       "purpose": "maskable"
     }
   ],
-  "start_url": ".",
+  "start_url": "Home.tsx",
   "display": "standalone",
   "theme_color": "#ffffff",
   "background_color": "#ffffff"
