@@ -11,7 +11,7 @@ const Home: React.FC = () => {
     return (
         <IonPage>
             <IonContent>
-                { InAppBrowser.create('https://app.queroajudar.org/', '_self', 'location=no') }
+                { InAppBrowser.create('https://app.queroajudar.org/', '_blank', 'location=no,toolbar=no,transitionstyle=crossdissolve') }
             </IonContent>
         </IonPage>
     );
