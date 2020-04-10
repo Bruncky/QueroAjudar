@@ -1,39 +1,40 @@
 import { IonContent, IonPage } from '@ionic/react';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
-import { StatusBar } from '@ionic-native/status-bar';
-import { Plugins } from '@capacitor/core';
+// import { StatusBar } from '@ionic-native/status-bar';
+import { Plugins, StatusBarStyle } from '@capacitor/core';
 import React from 'react';
 import './Home.css';
 
-// const changeStatusBarStyle = () => {
-//     StatusBar.setOverlaysWebView({ overlay: true });
-//
-//     StatusBar.setStyle({
-//         style: StatusBarStyle.Light
-//     });
-//
-//     StatusBar.setBackgroundColor({
-//         color: '#FFFFFF'
-//     });
-//
-//     StatusBar.show();
-// };
+const { StatusBar } = Plugins;
 
 const changeStatusBarStyle = () => {
-    StatusBar.overlaysWebView(true);
+    StatusBar.setOverlaysWebView({ overlay: true });
 
-    StatusBar.backgroundColorByHexString('#FFFFFF');
+    // StatusBar.setStyle({
+    //     style: StatusBarStyle.Light
+    // });
 
-    StatusBar.styleDefault();
+    // StatusBar.setBackgroundColor({
+    //     color: '#FF0000'
+    // });
 
-    // StatusBar.show();
+    StatusBar.show();
 };
+
+// const changeStatusBarStyle = () => {
+//     StatusBar.overlaysWebView(false);
+//
+//     StatusBar.backgroundColorByHexString('#FF0000');
+//
+//     StatusBar.styleDefault();
+// };
 
 const Home: React.FC = () => {
     return (
         <IonPage>
             <IonContent>
                 { changeStatusBarStyle() }
+
                 {
                     InAppBrowser.create(
                         'https://app.queroajudar.org/',
@@ -43,7 +44,6 @@ const Home: React.FC = () => {
                          transitionstyle=crossdissolve`
                     )
                 }
-                { StatusBar.show() }
             </IonContent>
         </IonPage>
     );
