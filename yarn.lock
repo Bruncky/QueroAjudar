@@ -1125,6 +1125,13 @@
   dependencies:
     "@types/cordova" latest
 
+"@ionic-native/onesignal@^5.23.0":
+  version "5.23.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/onesignal/-/onesignal-5.23.0.tgz#1a59a0396666921e4c0274160ceaed6c9f68cae0"
+  integrity sha512-KLZIxYUhs2NUXnpz/1zLb/ifpzYdqygkYgw3YaxWRGjnzLpJ6rLNwhmAkWY5L5B3gWFC1qWFrImeSwRvQtnsqg==
+  dependencies:
+    "@types/cordova" latest
+
 "@ionic-native/status-bar@^5.23.0":
   version "5.23.0"
   resolved "https://registry.yarnpkg.com/@ionic-native/status-bar/-/status-bar-5.23.0.tgz#5dccba2a129a484395999a1e379587420b190089"
@@ -7380,6 +7387,11 @@ once@^1.3.0, once@^1.3.1, once@^1.4.0:
   integrity sha1-WDsap3WWHUsROsF9nFC6753Xa9E=
   dependencies:
     wrappy "1"
+
+onesignal-cordova-plugin@^2.9.0:
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/onesignal-cordova-plugin/-/onesignal-cordova-plugin-2.9.0.tgz#1e93b1bee1843e6f7375a2557ffebd5fd3fb46c7"
+  integrity sha512-G8rNgRHdOzVhS1JkGkPEnTrbNfWGQ2Mfj3VdR5aB0/wUEsgGRq7prvms5cknVVc4/tN0dHpqLk73yukNtDKEXw==
 
 onetime@^2.0.0:
   version "2.0.1"
