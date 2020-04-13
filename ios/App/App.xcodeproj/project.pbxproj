@@ -15,6 +15,8 @@
 		504EC3121FED79650016851F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504EC3101FED79650016851F /* LaunchScreen.storyboard */; };
 		50B271D11FEDC1A000F3C39B /* public in Resources */ = {isa = PBXBuildFile; fileRef = 50B271D01FEDC1A000F3C39B /* public */; };
 		A084ECDBA7D38E1E42DFC39D /* Pods_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF277DCFFFF123FFC6DF26C7 /* Pods_App.framework */; };
+		C75703C52444EFBE001BC7E5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75703C42444EFBE001BC7E5 /* CoreGraphics.framework */; };
+		C75703C72444EFC6001BC7E5 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75703C62444EFC6001BC7E5 /* WebKit.framework */; };
 		C761F96C2444ED6F002734B3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A44D1E2444DADD0082B3BB /* SystemConfiguration.framework */; };
 		C761F96D2444ED77002734B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A44D202444DAE70082B3BB /* UIKit.framework */; };
 		C761F96E2444ED94002734B3 /* OneSignal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A44D222444DB420082B3BB /* OneSignal.framework */; };
@@ -58,6 +60,8 @@
 		50B271D01FEDC1A000F3C39B /* public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = public; sourceTree = SOURCE_ROOT; };
 		AF277DCFFFF123FFC6DF26C7 /* Pods_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF51FD2D460BCFE21FA515B2 /* Pods-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-App/Pods-App.release.xcconfig"; sourceTree = "<group>"; };
+		C75703C42444EFBE001BC7E5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C75703C62444EFC6001BC7E5 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		C761F96B2444ECCD002734B3 /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
 		C7A44D0C2444D7900082B3BB /* App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
 		C7A44D1E2444DADD0082B3BB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -83,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C75703C72444EFC6001BC7E5 /* WebKit.framework in Frameworks */,
+				C75703C52444EFBE001BC7E5 /* CoreGraphics.framework in Frameworks */,
 				C761F96E2444ED94002734B3 /* OneSignal.framework in Frameworks */,
 				C761F96D2444ED77002734B3 /* UIKit.framework in Frameworks */,
 				C761F96C2444ED6F002734B3 /* SystemConfiguration.framework in Frameworks */,
@@ -95,6 +101,8 @@
 		27E2DDA53C4D2A4D1A88CE4A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C75703C62444EFC6001BC7E5 /* WebKit.framework */,
+				C75703C42444EFBE001BC7E5 /* CoreGraphics.framework */,
 				C7A44D222444DB420082B3BB /* OneSignal.framework */,
 				C7A44D202444DAE70082B3BB /* UIKit.framework */,
 				C7A44D1E2444DADD0082B3BB /* SystemConfiguration.framework */,
