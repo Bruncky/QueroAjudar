@@ -1,7 +1,3 @@
 ion-content ion-toolbar {
     --background: white;
 }
-
-body {
-    padding: env(safe-area-inset-top);
-}
