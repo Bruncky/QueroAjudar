@@ -8,8 +8,8 @@ const Home: React.FC = () => {
     return (
         <IonPage>
             <IonContent>
-                { [changeStatusbar()] }
                 { [loadIAB()] }
+                { [changeStatusbar()] }
             </IonContent>
         </IonPage>
     );
