@@ -10,5 +10,6 @@
     "allowNavigation": [
       "https://app.queroajudar.org/"
     ]
-  }
+  },
+  "backgroundColor": "#FFFFFF"
 }
