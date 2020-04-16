@@ -1,6 +1,7 @@
 import { IonContent, IonPage } from '@ionic/react';
 import React from 'react';
-import { loadIAB } from '../components/InAppBrowser'
+import { loadIAB } from '../components/InAppBrowser';
+import { changeStatusbar } from '../components/StatusBar';
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -8,6 +9,7 @@ const Home: React.FC = () => {
         <IonPage>
             <IonContent>
                 { [loadIAB()] }
+                { [changeStatusbar()] }
             </IonContent>
         </IonPage>
     );

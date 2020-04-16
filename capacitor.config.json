@@ -1,14 +1,19 @@
 {
-  "appId": "com.queroajudar.app",
-  "appName": "Quero Ajudar",
-  "bundledWebRuntime": false,
-  "npmClient": "yarn",
-  "webDir": "build",
-  "cordova": {},
-  "linuxAndroidStudioPath": "/home/bruncky/android-studio/bin/studio.sh",
-  "server": {
-    "allowNavigation": [
-      "https://app.queroajudar.org/"
-    ]
-  }
+    "appId": "com.queroajudar.queroajudar",
+    "appName": "Quero Ajudar",
+    "bundledWebRuntime": false,
+    "npmClient": "yarn",
+    "webDir": "build",
+    "cordova": {},
+    "linuxAndroidStudioPath": "/home/bruncky/android-studio/bin/studio.sh",
+    "server": {
+        "url": "https://app.queroajudar.org",
+        "allowNavigation": [
+            "https://app.queroajudar.org"
+        ]
+    },
+    "ios": {
+        "contentInset": "always"
+    },
+    "backgroundColor": "#FFFFFF"
 }
